@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Display Img</title>
+    <script>
+		function displayImage(btn) {
+			var img = document.getElementById("image");
+			if (btn == "Button 1") {
+				img.src = "che.jpg";
+			} else if (btn == "Button 2") {
+				img.src = "Helo.jpg";
+			} else {
+				img.src = "est.jpg";
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Button Image Display</h1>
+	<button onclick="displayImage('Button 1')">Christmas</button>
+	<button onclick="displayImage('Button 2')">Halloween</button>
+	<button onclick="displayImage('Button 3')">Easter</button>
+	<br>
+    <br>
+	<img id="image" src="" alt="Image Display">
+</body>
+</html>
